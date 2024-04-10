@@ -1,0 +1,20 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended",
+        "group:allNonMajor",
+        "schedule:monthly"
+    ],
+    "packageRules": [
+      {
+        "groupName": "all major dependencies",
+        "groupSlug": "all-major",
+        "matchPackagePatterns": [
+          "*"
+        ],
+        "matchUpdateTypes": [
+          "major"
+        ]
+      }
+    ]
+}
