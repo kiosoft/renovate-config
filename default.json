@@ -3,7 +3,7 @@
     "extends": [
         "config:recommended",
         "group:allNonMajor",
-        "schedule:monthly"
+        "schedule:quarterly"
     ],
     "packageRules": [
       {
@@ -15,6 +15,23 @@
         "matchUpdateTypes": [
           "major"
         ]
+      },
+      {
+        "extends": [
+          "schedule:monthly"
+        ],
+        "groupName": "all non-major dev dependencies (automerge)",
+        "groupSlug": "all-dev-minor-patch",
+        "matchDepTypes": [
+          "devDependencies",
+          "require-dev"
+        ],
+        "matchUpdateTypes": [
+          "minor",
+          "patch"
+        ],
+        "automerge": true,
+        "automergeStrategy": "squash"
       }
     ]
 }
