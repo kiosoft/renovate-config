@@ -3,7 +3,8 @@
     "extends": [
         "config:recommended",
         "group:allNonMajor",
-        "schedule:quarterly"
+        "schedule:quarterly",
+        ":semanticCommits"
     ],
     "packageRules": [
       {
