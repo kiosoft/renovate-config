@@ -35,5 +35,8 @@
         "automerge": true,
         "automergeStrategy": "squash"
       }
-    ]
+    ],
+    "vulnerabilityAlerts": {
+      "groupName": "security-updates"
+    }
 }
